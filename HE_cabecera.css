@@ -1,0 +1,733 @@
+/* =======================================================
+   RESET GENERAL
+======================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  padding-top: 70px;
+}
+
+/* =======================================================
+ HEADER
+======================================================= */
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  background: #fff;
+
+  border-bottom: 1px solid #ddd;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 40px;
+
+  z-index: 1000;
+}
+
+/* =======================================================
+ LOGO
+======================================================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+/* =======================================================
+ MENÚ PRINCIPAL
+======================================================= */
+
+.Menu-Horizontal {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+
+  gap: 28px;
+}
+
+.Menu-Horizontal li {
+  position: relative;
+}
+
+.Menu-Horizontal li a {
+  display: block;
+
+  padding: 12px 18px;
+
+  color: #333;
+
+  text-decoration: none;
+
+  font-size: 17px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.Menu-Horizontal li a:hover {
+  color: #d61139;
+}
+
+/* =======================================================
+ SUBMENÚ
+======================================================= */
+
+.Menu-Vertical {
+  display: none;
+
+  position: absolute;
+
+  top: 100%;
+
+  left: 0;
+
+  width: 220px;
+
+  background: white;
+
+  list-style: none;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.Menu-Vertical li {
+  width: 100%;
+}
+
+.Menu-Vertical li a {
+  padding: 12px 16px;
+
+  font-size: 15px;
+
+  color: #333;
+}
+
+.Menu-Vertical li a:hover {
+  background: #f5f5f5;
+
+  color: #d61139;
+}
+
+/* =======================================================
+ BOTÓN HAMBURGUESA
+======================================================= */
+
+.menu-toggle {
+  display: none;
+
+  position: absolute;
+
+  left: 20px;
+
+  font-size: 30px;
+
+  background: none;
+
+  border: none;
+
+  cursor: pointer;
+}
+/* =======================================================
+   BANNER PRINCIPAL
+======================================================= */
+
+.section-productos {
+  background: #d61139;
+  padding: 90px 8%;
+}
+
+.div-gral-productos {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+.div_text_productos {
+  flex: 1;
+}
+
+.div_text_productos h2 {
+  color: white;
+
+  font-size: 70px;
+
+  margin-bottom: 25px;
+}
+
+.div_text_productos p {
+  color: white;
+
+  font-size: 22px;
+
+  line-height: 1.6;
+
+  margin-bottom: 35px;
+}
+
+.boton-principal {
+  display: inline-block;
+
+  padding: 16px 35px;
+
+  background: white;
+
+  color: #d61139;
+
+  text-decoration: none;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+.boton-principal:hover {
+  background: #efefef;
+}
+
+.div_img_productos {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.div_img_productos img {
+  width: 100%;
+
+  max-width: 430px;
+}
+
+/* =======================================================
+ PRODUCTOS DESTACADOS
+======================================================= */
+
+.productos {
+  padding: 70px 8%;
+
+  background: #f5f5f5;
+}
+
+.productos h2 {
+  text-align: center;
+
+  font-size: 42px;
+
+  margin-bottom: 50px;
+}
+
+.contenedor-productos {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.div_producto {
+  width: 270px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+
+  transition: 0.3s;
+}
+
+.div_producto:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.div_img_producto img {
+  width: 100%;
+
+  height: 230px;
+
+  object-fit: cover;
+}
+
+.div_text_producto {
+  padding: 20px;
+}
+
+.div_text_producto h3 {
+  font-size: 20px;
+
+  min-height: 60px;
+}
+
+.div_text_producto p {
+  color: #0b8f37;
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  margin: 18px 0;
+}
+
+.div_text_producto a {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  background: #d61139;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  transition: 0.3s;
+}
+
+.div_text_producto a:hover {
+  background: #b50f31;
+}
+/* =======================================================
+   CATEGORÍAS
+======================================================= */
+
+.categorias {
+  padding: 70px 8%;
+  background: white;
+}
+
+.categorias h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+.contenedor-categorias {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.categoria {
+  width: 250px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.categoria:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.categoria img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.categoria h3 {
+  margin-top: 18px;
+  font-size: 22px;
+  color: #333;
+}
+
+.categoria p {
+  margin: 15px;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* =======================================================
+ VIDEO
+======================================================= */
+
+.video-promocional {
+  padding: 70px 8%;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.video-promocional h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.video-promocional iframe {
+  width: 900px;
+  max-width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* =======================================================
+ CONTACTO
+======================================================= */
+
+.contacto {
+  padding: 70px 8%;
+  background: white;
+}
+
+.contacto h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.contacto form {
+  width: 650px;
+
+  max-width: 100%;
+
+  margin: auto;
+
+  background: #f8f8f8;
+
+  padding: 35px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.contacto label {
+  margin-top: 15px;
+
+  margin-bottom: 8px;
+
+  font-weight: bold;
+
+  color: #333;
+}
+
+.contacto input,
+.contacto select {
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.contacto input:focus,
+.contacto select:focus {
+  border-color: #d61139;
+}
+
+.contacto input[type="submit"] {
+  margin-top: 30px;
+
+  padding: 14px;
+
+  background: #d61139;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 17px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.contacto input[type="submit"]:hover {
+  background: #b50f31;
+}
+/* =======================================================
+   FOOTER
+======================================================= */
+
+.footer {
+  background: #222;
+  color: white;
+  padding: 50px 8%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.footer-brand small {
+  color: #ccc;
+}
+
+.footer-links {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+  color: #d61139;
+}
+
+.footer-social {
+  flex: 1;
+}
+
+.footer-social h4 {
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  width: 35px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}
+
+/* =======================================================
+ RESPONSIVE
+======================================================= */
+
+@media (max-width: 768px) {
+  /* HEADER */
+
+  .top-header {
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo img {
+    height: 38px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
+
+  .Menu-Horizontal {
+    display: none;
+  }
+
+  /* BANNER */
+
+  .section-productos {
+    padding: 60px 20px;
+  }
+
+  .div-gral-productos {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .div_text_productos {
+    width: 100%;
+  }
+
+  .div_text_productos h2 {
+    font-size: 48px;
+  }
+
+  .div_text_productos p {
+    font-size: 18px;
+  }
+
+  .div_img_productos {
+    width: 100%;
+  }
+
+  .div_img_productos img {
+    max-width: 300px;
+  }
+
+  /* PRODUCTOS */
+
+  .productos {
+    padding: 50px 20px;
+  }
+
+  .contenedor-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div_producto {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* CATEGORÍAS */
+
+  .categorias {
+    padding: 50px 20px;
+  }
+
+  .contenedor-categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoria {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* VIDEO */
+
+  .video-promocional {
+    padding: 50px 20px;
+  }
+
+  .video-promocional iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* CONTACTO */
+
+  .contacto {
+    padding: 50px 20px;
+  }
+
+  .contacto form {
+    width: 100%;
+    padding: 25px;
+  }
+
+  /* FOOTER */
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-social {
+    text-align: center;
+  }
+}
+.categoria img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: white;
+}

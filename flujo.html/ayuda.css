@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: #f5f6f7;
+}
+
+/* HEADER */
+
+header {
+  background: white;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 18px 60px;
+}
+
+nav {
+  display: flex;
+
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+
+  color: #333;
+
+  font-size: 14px;
+}
+
+.acciones {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.btn-reportar {
+  background: #005e60;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+}
+
+.cuenta {
+  border: 1px solid #ccc;
+
+  background: white;
+
+  padding: 8px 15px;
+
+  border-radius: 30px;
+}
+
+/* HERO */
+
+.hero {
+  width: 90%;
+
+  margin: 30px auto;
+
+  background: #dff1ee;
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 40px;
+}
+
+.hero img {
+  width: 180px;
+}
+
+.hero h1 {
+  font-size: 38px;
+
+  color: #244949;
+}
+
+.hero p {
+  margin-top: 10px;
+
+  color: #555;
+}
+
+/* SECCIONES */
+
+section {
+  width: 90%;
+
+  margin: auto;
+
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 18px;
+
+  color: #244949;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+
+  background: white;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border: 1px solid #ddd;
+}
+
+.icono {
+  width: 60px;
+
+  height: 60px;
+
+  border-radius: 50%;
+
+  background: #d9f0ea;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 22px;
+
+  color: #005e60;
+}
+
+/* TUTORIAL */
+
+.tutorial {
+  display: flex;
+
+  background: white;
+
+  border: 1px solid #ddd;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+.video {
+  width: 280px;
+
+  height: 170px;
+
+  background: #dfeeee;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.video i {
+  font-size: 40px;
+
+  color: #005e60;
+}
+
+.tutorial div:last-child {
+  padding: 20px;
+}
+
+/* FAQ */
+
+details {
+  background: white;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  margin-bottom: 10px;
+
+  padding: 15px;
+}
+
+summary {
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 50px;
+
+  background: #134f50;
+
+  color: white;
+
+  padding: 25px 60px;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+footer a {
+  color: white;
+
+  text-decoration: none;
+
+  margin-left: 25px;
+}
