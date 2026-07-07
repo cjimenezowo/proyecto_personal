@@ -52,23 +52,19 @@ body {
 .logo img{
     height:42px;
 }
-}
+
 
 /* =======================================================
  MENÚ PRINCIPAL
 ======================================================= */
 
-.Menu-Horizontal{
 
-    margin-left:auto;
-
-    display:flex;
-
-    list-style:none;
-
-    gap:25px;
-
-    align-items:center;
+.Menu-Horizontal {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin-left: auto;
+  align-items: center;
 }
 .Menu-Horizontal li {
   position: relative;
