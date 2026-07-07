@@ -18,57 +18,58 @@ body {
  HEADER
 ======================================================= */
 
-.top-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
+.top-header{
+    position: fixed;
+    top: 0;
+    left: 0;
 
-  background: #fff;
+    width: 100%;
+    height: 70px;
 
-  border-bottom: 1px solid #ddd;
+    background: white;
 
-  display: flex;
-  align-items: center;
+    display:flex;
+    align-items:center;
 
-  padding: 0 40px;
+    padding:0 40px;
 
-  z-index: 1000;
+    border-bottom:1px solid #ddd;
+
+    z-index:1000;
 }
 
 /* =======================================================
  LOGO
 ======================================================= */
 
-.logo {
-  display: flex;
-  align-items: center;
+.logo{
+    display:flex;
+    align-items:center;
 
-  text-decoration: none;
+    text-decoration:none;
 }
 
-.logo img {
-  height: 42px;
-  width: auto;
-  display: block;
+.logo img{
+    height:42px;
+}
 }
 
 /* =======================================================
  MENÚ PRINCIPAL
 ======================================================= */
 
-.Menu-Horizontal {
-  margin-left: auto;
+.Menu-Horizontal{
 
-  display: flex;
-  align-items: center;
+    margin-left:auto;
 
-  list-style: none;
+    display:flex;
 
-  gap: 28px;
+    list-style:none;
+
+    gap:25px;
+
+    align-items:center;
 }
-
 .Menu-Horizontal li {
   position: relative;
 }
